@@ -2,18 +2,42 @@
   "name": "repro",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "prepare": "husky install",
+    "dev": "next",
+    "lint": "next lint && prettier --check .",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
-    "next": "12.0.10",
+    "@aws-sdk/client-dynamodb": "^3.49.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.0",
+    "@mui/material": "^5.2.8",
+    "formik": "^2.2.9",
+    "next": "^12.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "serve": "^13.0.2"
   },
   "devDependencies": {
+    "@types/node": "17.0.13",
+    "@types/react": "17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
     "eslint": "8.8.0",
-    "eslint-config-next": "12.0.10"
+    "eslint-config-next": "^12.0.8",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "extracted-loader": "^1.0.7",
+    "file-loader": "^6.2.0",
+    "husky": "^7.0.4",
+    "ignore-loader": "^0.1.2",
+    "img-loader": "^4.0.0",
+    "lint-staged": "^12.3.2",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "prettier": "^2.5.1",
+    "typescript": "4.5.5",
+    "url-loader": "^4.1.1"
   }
 }
